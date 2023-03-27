@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.TestNG.Annotations"/>
+      <class name="com.TestNG.SwagLabs"/>
+      <class name="com.AutomationTesting.Amazon"/>
+      <class name="com.facebook.Facebook"/>
+      <class name="com.AutomationTesting.Ekbazaar"/>
+      <class name="com.TestNG.TestngPractice"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

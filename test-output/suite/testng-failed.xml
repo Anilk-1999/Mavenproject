@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="com.AutomationTesting.Amazon">
+        <methods>
+          <include name="Testcase15"/>
+          <include name="closeTestcase"/>
+          <include name="Testcase17"/>
+          <include name="Testcase8"/>
+          <include name="setuptest"/>
+          <include name="Testcase10"/>
+          <include name="Testcase6"/>
+          <include name="Testcase11"/>
+          <include name="Testcase14"/>
+          <include name="Testcase13"/>
+          <include name="Testcase16"/>
+        </methods>
+      </class> <!-- com.AutomationTesting.Amazon -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [suite] -->

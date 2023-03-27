@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="test">
+		<classes>
+			<class name="com.AutomationTesting.Amazon">
+				<methods>
+					<include name="Testcase1"></include>
+					<include name="Testcase3"></include>
+					<include name="Testcase4"></include>
+			    	<include name="closeTestcase"></include>
+				</methods>
+			</class>
+			<class name="com.facebook.Facebook">
+				<methods>
+					<include name="test"></include>
+					<include name="logintest"></include>
+					<include name="Closetest"></include>
+				</methods>
+			</class>
+			<class name="com.TestNG.SwagLabs">
+				<methods>
+					<include name="Testcase1"></include>
+					<include name="Testcase2"></include>
+					<include name="CloseTest"></include>
+				</methods>
+				
+	     	</class>
+		</classes>
+	</test>
+</suite>

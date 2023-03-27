@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ta]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="adm(failed)">
+    <classes>
+      <class name="com.AutomationTesting.Amazon">
+        <methods>
+          <include name="closeTestcase"/>
+          <include name="setuptest"/>
+          <include name="Testcase6"/>
+        </methods>
+      </class> <!-- com.AutomationTesting.Amazon -->
+    </classes>
+  </test> <!-- adm(failed) -->
+</suite> <!-- Failed suite [Ta] -->
