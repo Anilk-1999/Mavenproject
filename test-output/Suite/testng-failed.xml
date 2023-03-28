@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="password1" value="Anil123@#"/>
-    <parameter name="username" value="anilkumar327a@gmail.com"/>
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.TestNG.Parameterization">
+      <class name="com.TestNG.Parallel_passparametertoSetup">
         <methods>
-          <include name="logintest"/>
-          <include name="browserclose"/>
-          <include name="test"/>
+          <include name="Testcase3"/>
+          <include name="Testcase2"/>
+          <include name="setuptest"/>
+          <include name="closetest"/>
         </methods>
-      </class> <!-- com.TestNG.Parameterization -->
+      </class> <!-- com.TestNG.Parallel_passparametertoSetup -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
