@@ -31,18 +31,13 @@ public class Login_page_for_both_positive_and_negative
 		driver.get("https://www.amazon.in/");
 	}
 	
-	@Test(description = "mouseover on Account & Lists testing",priority = 1 )
-	public void testcase1()
+	
+	@Test(description = "verify the sign",priority = 1, dataProvider="passdataPositiveAndNegative")
+	public void Testcase1(String uname,String pswd) throws InterruptedException
 	{
 		WebElement ele = driver.findElement(By.xpath("//span[contains(.,'Account & Lists')]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).perform();
-	}
-	
-	
-	@Test(description = "verify the sign",priority = 2, dataProvider="passdataPositiveAndNegative")
-	public void Testcase2(String uname,String pswd) throws InterruptedException
-	{
 		driver.findElement(By.xpath("(//span[.='Sign in'])[1]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.name("email")).sendKeys(uname);
@@ -61,6 +56,7 @@ public class Login_page_for_both_positive_and_negative
 	{
 		driver.close();
 	}
+	
 	
 	@DataProvider()
 	public static Object[][] passdataPositiveAndNegative()
