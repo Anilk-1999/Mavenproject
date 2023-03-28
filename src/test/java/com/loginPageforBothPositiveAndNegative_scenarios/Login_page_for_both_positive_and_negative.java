@@ -48,6 +48,7 @@ public class Login_page_for_both_positive_and_negative
 		Thread.sleep(2000);
 		driver.findElement(By.id("signInSubmit")).click();
 		Thread.sleep(2000);
+	 System.out.println("hello");
 	
 	}
 	
