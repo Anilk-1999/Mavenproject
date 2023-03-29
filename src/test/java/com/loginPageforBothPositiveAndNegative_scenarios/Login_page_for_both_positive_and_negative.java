@@ -1,5 +1,6 @@
 package com.loginPageforBothPositiveAndNegative_scenarios;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -12,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -20,15 +22,15 @@ public class Login_page_for_both_positive_and_negative
 {
   
 	WebDriver driver;
-	
+	@Parameters({"url"})
 	@BeforeMethod
-	public void setuptest()
+	public void setuptest(String appurl)
 	{
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.amazon.in/");
+		driver.get(appurl);
 	}
 	
 	
