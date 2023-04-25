@@ -1,0 +1,44 @@
+WebElement heading = driver.findElement(By.xpath);
+
+String fontSize = heading.getCssValue("font-size");
+
+String color = heading.getCssValue("color");
+
+Assert.assertEquals(fontSize, "value");
+
+Assert.assertEquals(color, "value");
+
+-------------------------------------------------------------------------------
+
+String padding = element.getCssValue("padding");
+
+System.out.println("padding value"+padding);
+
+-------------------------------------------------------------------------------
+
+Font family
+String font = element.getCssValue("font");
+System.out.println("Font: " + font);
+
+-------------------------------------------------------------------------------
+
+Text alignment
+String alignment = element.getCssValue("text-align");
+
+------------------------------------------------------------------------------
+
+Top alignment and right alignment
+String alignment = element.getCssValue("text-align");
+
+if (alignment.equals("left")) {
+    System.out.println("Text is left-aligned");
+} else if (alignment.equals("right")) {
+    System.out.println("Text is right-aligned");
+} else {
+    System.out.println("Text is not left- or right-aligned");
+}
+
+-------------------------------------------------------------------------------
+
+
+

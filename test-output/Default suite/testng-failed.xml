@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.loginPageforBothPositiveAndNegative_scenarios.Login_page_for_both_positive_and_negative">
+      <class name="datadrivenTesting.Datadriventesting">
         <methods>
-          <include name="setuptest"/>
-          <include name="closeapp"/>
-          <include name="Testcase1"/>
+          <include name="testcase1" invocation-numbers="1 2 3"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.loginPageforBothPositiveAndNegative_scenarios.Login_page_for_both_positive_and_negative -->
+      </class> <!-- datadrivenTesting.Datadriventesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
